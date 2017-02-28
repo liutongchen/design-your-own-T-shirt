@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Design Your Own T-shirt</title>
+        <meta charset="utf-8">
+        <style>
+            p {
+                margin-left: 12em;
+            }
+
+            #instruction {
+                margin-left: 9em;
+                font-size: 1.3em;
+            }
+        </style>
+
+        <script src="designYourOwnTshirt.js"></script>
+    </head>
+    <body>
+        <p id="instruction"><strong>Please first select the style, and then press "preview" to view your t-shirt</strong></p>
+        <canvas width="1000" height="600" id="tshirtCanvas">Please upgrade your browser to design your own shirt!</canvas>
+        <form>
+            <p>
+                <label for"tshirtColor">Select T-shirt color: </label>
+                <select id="tshirtColor">
+                    <option value="white" selected="selected">White</option>
+                    <option value="black">Black</option>
+                    <option value="pink">Pink</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="backgroundColor">Select background color: </label>
+                <select id="backgroundColor">
+                    <option value="white" selected="selected">White</option>
+                    <option value="black">Black</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="shape">Circles or squares?</label>
+                <select id="shape">
+                    <option value="none" selected="selected">Neither</option>
+                    <option value="circles">Circles</option>
+                    <option value="squares">Squares</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="foregroundColor">Select text color: </label>
+                <select id="foregroundColor">
+                    <option value="white">White</option>
+                    <option value="black" selected="selected">Black</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="text">Pick a text: </label>
+                <select id="text">
+                    <option value="Don't give up on your dream. Keep sleeping.">Don't give up on your dream. Keep sleeping.</option>
+                    <option value="I'm going to stand outside. So if anyone asks, I'm outstanding." selected="selected">I'm going to stand outside. So if anyone asks, I'm outstanding.</option>
+                    <option value="Chocolate comes from cocoa, which is a tree. that makes it a plant...so chocolate is a salad">Chocolate comes from cocoa, which is a tree. that makes it a plant...so chocolate is a salad</option>
+                    <option value="I'm  not weird. I am limited edition.">I'm  not weird. I am limited edition.</option>
+                    <option value="Of course I talk to myself. Sometimes I need expert advice">Of course I talk to myself. Sometimes I need expert advice</option>
+                    <option value="If people are talking about you behind your back, THEN JUST FART!">If people are talking about you behind your back, THEN JUST FART!</option>
+                    <option value="After Tuesday, even the calender goes W T F">After Tuesday, even the calender goes W T F</option>
+
+                </select>
+            </p>
+
+            <p>
+                <input type="button" id="previewButton" value="Preview">
+            </p>
+        </form>
+    </body>
+</html>
+    
+<!--Or upload quotes from the following website. 
+    <script src="http://tweetshirt.wickedlysmart.com/?callback=updateText"></script>
+    HOW TO USE:
+    1. Uncomment from js file to use:
+    2. Delete the options of the "text" selection
+-->
